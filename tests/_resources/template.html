@@ -1,0 +1,102 @@
+<ac:layout>
+  <ac:layout-section ac:type="single">
+    <ac:layout-cell>
+      <p>
+        <ac:structured-macro ac:macro-id="fa6d5293-c513-404b-9578-897c9b8b43ec" ac:name="toc" ac:schema-version="1"/>
+      </p>
+      <hr/>
+    </ac:layout-cell>
+  </ac:layout-section>
+  <ac:layout-section ac:type="single">
+    <ac:layout-cell>
+      <h1>Summary</h1>
+      <table class="relative-table wrapped" style="width: 40.0%;">
+        <colgroup> <col style="width: 25.0%;"/> <col style="width: 25.0%;"/> <col style="width: 25.0%;"/> <col style="width: 25.0%;"/> </colgroup>
+        <tbody>
+          <tr>
+            <th>Fix Version</th>
+            <th>Total PR</th>
+            <th>Total FR</th>
+            <th colspan="1">Total CR</th>
+            <th colspan="1">VAR</th>
+            <th colspan="1">VAR2</th>
+          </tr>
+          <tr>
+            <td>$FixVersion</td>
+            <td>$TotalPr</td>
+            <td>
+              <span>$TotalFr</span>
+            </td>
+            <td colspan="1">
+              <span>$MY_VAR_X</span>
+            </td>
+            <td colspan="1">
+              <span>$MY_OTHER_VAR</span>
+            </td>
+            <td colspan="1">
+              <span>$MY_HTML_TAG</span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br/>
+      <hr/>
+    </ac:layout-cell>
+  </ac:layout-section>
+  <ac:layout-section ac:type="single">
+    <ac:layout-cell>
+      <h1>Changes to Product Configuration</h1>
+      <p>This section describes all changes made to the product configuration for this release.</p>
+      <hr/>
+      <h2>Problem Reports corrected in this Release (Reported by $Customer)</h2>
+      <p>
+        <ac:structured-macro ac:macro-id="6fe20b89-2b8e-4d00-b92d-66c6574c5ef1" ac:name="jira" ac:schema-version="1">
+          <ac:parameter ac:name="server">I IC JIRA</ac:parameter>
+          <ac:parameter ac:name="columns">$PRCustomer_Columns</ac:parameter>
+          <ac:parameter ac:name="maximumIssues">20</ac:parameter>
+          <ac:parameter ac:name="jqlQuery">$PRCustomer_JqlQuery</ac:parameter>
+          <ac:parameter ac:name="serverId">6f6045d6-ac75-396c-9b0d-e3c82f291d58</ac:parameter>
+        </ac:structured-macro>
+      </p>
+      <h2>Problem Reports corrected in this Release (Non Customer Related)</h2>
+      <p>
+        <ac:structured-macro ac:macro-id="bd3bc746-5c36-4abd-b104-43f7a6d26311" ac:name="jira" ac:schema-version="1">
+          <ac:parameter ac:name="server">I IC JIRA</ac:parameter>
+          <ac:parameter ac:name="columns">$PRNonCustomer_Columns</ac:parameter>
+          <ac:parameter ac:name="maximumIssues">20</ac:parameter>
+          <ac:parameter ac:name="jqlQuery">$PRNonCustomer_JqlQuery</ac:parameter>
+          <ac:parameter ac:name="serverId">6f6045d6-ac75-396c-9b0d-e3c82f291d58</ac:parameter>
+        </ac:structured-macro>
+      </p>
+      <h2>Change Requests Implemented in this Release</h2>
+      <p>
+        <ac:structured-macro ac:macro-id="91257b61-3794-40e5-b35e-c7a8ce2072f0" ac:name="jira" ac:schema-version="1">
+          <ac:parameter ac:name="server">I IC JIRA</ac:parameter>
+          <ac:parameter ac:name="columns">$CR_Columns</ac:parameter>
+          <ac:parameter ac:name="maximumIssues">20</ac:parameter>
+          <ac:parameter ac:name="jqlQuery">$CR_JqlQuery</ac:parameter>
+          <ac:parameter ac:name="serverId">6f6045d6-ac75-396c-9b0d-e3c82f291d58</ac:parameter>
+        </ac:structured-macro>
+      </p>
+    </ac:layout-cell>
+  </ac:layout-section>
+  <ac:layout-section ac:type="single">
+    <ac:layout-cell>
+      <h1>Remaining Open Problem Reports</h1>
+      <p>This section describes all open problem reports remaining in the product configuration for this release.</p>
+      <hr/>
+      <p>
+        <ac:structured-macro ac:macro-id="87dfc86f-4e09-4485-b71e-682199ae854b" ac:name="jira" ac:schema-version="1">
+          <ac:parameter ac:name="server">I IC JIRA</ac:parameter>
+          <ac:parameter ac:name="columns">$PROpen_Columns</ac:parameter>
+          <ac:parameter ac:name="maximumIssues">20</ac:parameter>
+          <ac:parameter ac:name="jqlQuery">$PROpen_JqlQuery</ac:parameter>
+          <ac:parameter ac:name="serverId">6f6045d6-ac75-396c-9b0d-e3c82f291d58</ac:parameter>
+        </ac:structured-macro>
+      </p>
+      <p>
+        <br/>
+      </p>
+    </ac:layout-cell>
+  </ac:layout-section>
+</ac:layout>
